@@ -1,7 +1,7 @@
 import random
 
-random_x = random.randint(1, 10 - 2)
-random_y = random.randint(1,  5 - 2)
+random_x = random.randint(1, 10)
+random_y = random.randint(1, 5)
 
 szeles = 10
 magas = 5
