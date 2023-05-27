@@ -1,8 +1,10 @@
 import random
 
+random_x = random.randint(1, 10 - 2)
+random_y = random.randint(1,  5 - 2)
 
-random_x = random.randint(1, 60 - 2)
-random_y = random.randint(1, 30 - 2)
+szeles = 10
+magas = 5
 
 
 def print_cube(szeles, magas):
@@ -16,8 +18,7 @@ def print_cube(szeles, magas):
                 print(" ", end="")
         print()
 
-szeles = 60
-magas = 30
+
 print_cube(szeles, magas)
 
 irany = input("Merre? ")
@@ -39,6 +40,12 @@ def print_cube(szeles, magas):
                 print(" ", end="")
         print()
 
-szeles = 60
-magas = 30
-print_cube(szeles, magas)
+while True:
+    print_cube(szeles, magas)
+    irany = input("Merre: ")
+    if irany == "Meguntam":
+        print("Rendben, köszönöm a játékot!")
+        break
+        
+
+
